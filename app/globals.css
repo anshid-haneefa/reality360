@@ -54,6 +54,22 @@
   .glass-hover {
     @apply hover:bg-card/60 hover:border-primary/25 transition-all duration-500 ease-out;
   }
+
+  /* Navbar glass card effect */
+  .glass-card {
+    @apply bg-card/40 backdrop-blur-2xl border-b border-border/40;
+    box-shadow: 0 8px 32px hsl(var(--background) / 0.5);
+  }
+
+  /* Gradient text effect for logo */
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
   .glow {
     box-shadow:
       0 0 80px -16px hsl(217 80% 56% / 0.18),
@@ -90,6 +106,21 @@
   50% { transform: translateY(-12px); }
 }
 
+@keyframes hero-float {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotateX(0deg);
+  }
+  25% {
+    transform: translate3d(0, -8px, 10px) rotateX(0.5deg);
+  }
+  50% {
+    transform: translate3d(0, -12px, 15px) rotateX(1deg);
+  }
+  75% {
+    transform: translate3d(0, -8px, 10px) rotateX(0.5deg);
+  }
+}
+
 .animate-fade-in-up {
   animation: fade-in-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
@@ -111,3 +142,34 @@
 .stagger-3 { animation-delay: 0.45s; }
 .stagger-4 { animation-delay: 0.6s; }
 .stagger-5 { animation-delay: 0.75s; }
+
+/* Hero floating background effect */
+.hero-floating-bg {
+  animation: hero-float 8s ease-in-out infinite;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Disable animations for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-floating-bg {
+    animation: none;
+    transform: none;
+  }
+}
+
+/* Mobile optimizations - reduce floating effect */
+@media (max-width: 640px) {
+  @keyframes hero-float {
+    0%, 100% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -4px, 5px);
+    }
+  }
+
+  .hero-floating-bg {
+    animation-duration: 10s;
+  }
+}

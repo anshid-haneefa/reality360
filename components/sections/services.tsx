@@ -34,9 +34,8 @@ export function ServicesSection() {
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
             What We Do
           </p>
-          <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-            Our Services
-          </h2>
+          <h2>VR Event Services in Kerala</h2>
+          <p>As a trusted VR event company in Palakkad, we provide interactive virtual reality attractions for weddings, exhibitions, temple festivals, school events, and corporate programs across Kerala.</p>
         </AnimateIn>
 
         <div className="mt-16 grid gap-8 lg:grid-cols-2">
@@ -85,11 +84,12 @@ export function ServicesSection() {
                 <Building2Icon />
               </div>
               <h3 className="font-display text-2xl font-bold text-foreground">
-                Architectural 3D Rendering & VR Walkthroughs
+                Architectural 3D Rendering & VR Walkthrough Services in Kerala
               </h3>
               <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-                We help architects, builders, and developers present projects with photorealistic 3D
-                renders and immersive VR walkthrough experiences.
+                We support architects, builders, and real estate developers in Kerala with photorealistic
+                3D rendering, immersive VR property walkthroughs, and presentation-ready
+                visualization solutions.
               </p>
               <ul className="mt-6 flex-1 space-y-3">
                 {archFeatures.map((f) => (

@@ -8,6 +8,7 @@ import { PackagesSection } from "@/components/sections/packages"
 import { TestimonialSection } from "@/components/sections/testimonial"
 import { ContactSection } from "@/components/sections/contact"
 import { Footer } from "@/components/sections/footer"
+import ServiceAreasSection from "@/components/sections/ServiceAreasSection";
 
 export default function Page() {
   return (
@@ -17,8 +18,8 @@ export default function Page() {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
-        <WhyChooseUsSection />
         <PortfolioSection />
+        <ServiceAreasSection />
         <PackagesSection />
         <TestimonialSection />
         <ContactSection />

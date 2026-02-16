@@ -29,6 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${_inter.variable} ${_spaceGrotesk.variable}`}>
+      <head>
+        <title>VR Services in Kerala | Architectural 3D Rendering | Reality 360 Studios</title>
+        <meta name="description" content="Reality 360 Studios provides premium VR event services and architectural 3D rendering in Palakkad and across Kerala. Immersive VR experiences and professional visualization solutions." />
+      </head>
       <body className="font-sans antialiased">{children}</body>
     </html>
   )
