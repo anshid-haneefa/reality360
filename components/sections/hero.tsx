@@ -107,7 +107,7 @@ export function HeroSection() {
       >
         <div className="absolute inset-0 scale-110">
           <Image
-            src="/images/hero-vr3.png"
+            src="/images/hero-vr.jpg"
             alt=""
             fill
             className="object-cover opacity-50"
