@@ -110,7 +110,7 @@ export function HeroSection() {
             src="/images/hero-vr3.png"
             alt=""
             fill
-            className="object-cover opacity-80"
+            className="object-cover opacity-20"
             priority
             sizes="100vw"
           />
@@ -144,14 +144,14 @@ export function HeroSection() {
 
       {/* Content - foreground layer */}
       <div className="relative z-10 mx-auto max-w-5xl px-4 py-32 text-center sm:px-6 lg:px-8">
-        <div className="animate-fade-in-up mb-8 inline-flex items-center gap-2 rounded-full border border-border/40 bg-card/30 px-4 py-1.5 opacity-0 backdrop-blur-sm">
+        <div className="animate-fade-in-up mb-8 inline-flex items-center gap-2 rounded-full border border-border/40 bg-card/30 px-4 py-1.5  backdrop-blur-sm">
           <span className="h-1.5 w-1.5 rounded-full bg-accent" />
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
             Immersive Technology Studio
           </span>
         </div>
 
-        <h1 className="animate-fade-in-up stagger-1 font-display text-5xl font-bold leading-[1.1] tracking-tight text-foreground opacity-0 sm:text-6xl lg:text-8xl">
+        <h1 className="animate-fade-in-up stagger-1 font-display text-5xl font-bold leading-[1.1] tracking-tight text-foreground  sm:text-6xl lg:text-8xl">
           <span className="text-balance">Reality 360</span>
           <br />
           <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
@@ -159,22 +159,22 @@ export function HeroSection() {
           </span>
         </h1>
 
-        <p className="animate-fade-in-up stagger-2 mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground opacity-0 sm:text-xl">
+        <p className="animate-fade-in-up stagger-2 mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground  sm:text-xl">
           Immersive VR Experiences & Architectural Visualization
         </p>
 
-        {/* <p className="animate-fade-in-up stagger-3 mx-auto mt-3 max-w-xl text-base text-muted-foreground/60 opacity-0">
+        {/* <p className="animate-fade-in-up stagger-3 mx-auto mt-3 max-w-xl text-base text-muted-foreground/60 ">
           Bringing Spaces and Experiences to Life — Virtually.
         </p> */}
 
         <p
           
-          className="animate-fade-in-up stagger-3 mt-3 text-muted-foreground/80 text-sm mb-10 max-w-2xl mx-auto leading-relaxed opacity-0"
+          className="animate-fade-in-up stagger-3 mt-3 text-muted-foreground/80 text-sm mb-10 max-w-2xl mx-auto leading-relaxed "
         >
           Reality 360 Studios is a leading VR services company in Palakkad, Kerala, specializing in immersive VR event experiences and professional architectural 3D rendering solutions across Kerala.
         </p>
 
-        <div className="animate-fade-in-up stagger-4 mt-12 flex flex-col items-center justify-center gap-4 opacity-0 sm:flex-row">
+        <div className="animate-fade-in-up stagger-4 mt-12 flex flex-col items-center justify-center gap-4  sm:flex-row">
           <Button
             asChild
             size="lg"
