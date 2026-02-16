@@ -110,7 +110,7 @@ export function HeroSection() {
             src="/images/hero-vr3.png"
             alt=""
             fill
-            className="object-cover opacity-20"
+            className="object-cover opacity-50"
             priority
             sizes="100vw"
           />
