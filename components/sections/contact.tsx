@@ -46,7 +46,8 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-foreground">Phone</p>
-                    <p className="text-sm text-muted-foreground">+91 XXXXX XXXXX</p>
+                    <p className="text-sm text-muted-foreground">+91 90615 50816, +91 82810 67040  </p>
+                    
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
