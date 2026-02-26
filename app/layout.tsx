@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Premium VR event experiences and professional architectural visualization services in Palakkad and across Kerala.",
     images: [
       {
-        url: "/vr-image.png",
+        url: "/images/vr-logo.png",
         width: 1200,
         height: 630,
         alt: "Reality 360 Studios VR Experience Setup",
