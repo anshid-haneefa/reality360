@@ -15,7 +15,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.reality360studios.com"),
+  metadataBase: new URL("https://reality360.vercel.app"),
 
   title: {
     default:
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Premium VR event experiences and professional architectural visualization services in Palakkad and across Kerala.",
     images: [
       {
-        url: "/images/vr-logo.png",
+        url: "/vr-image.png",
         width: 1200,
         height: 630,
         alt: "Reality 360 Studios VR Experience Setup",
