@@ -1,6 +1,7 @@
 import { PartyPopper, Landmark, Users, GraduationCap, Gamepad2, Home, Eye, PresentationIcon, Lightbulb, Palette, ArrowRight } from "lucide-react"
 import { AnimateIn } from "@/components/animate-in"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 const vrFeatures = [
   { icon: PartyPopper, label: "Wedding & Engagement VR Booths" },
@@ -42,9 +43,17 @@ export function ServicesSection() {
           {/* VR Entertainment */}
           <AnimateIn delay={0.1}>
             <div className="glass glass-hover group flex h-full flex-col rounded-2xl p-8 glow-sm">
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-                <Gamepad2 className="h-7 w-7" />
-              </div>
+             
+              {/* <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary"> */}
+                {/* <Gamepad2 className="h-7 w-7" /> */}
+                <Image
+                  src="/images/entertain1-svg.png"
+                  alt="Logo"
+                  width={90}
+                  height={90}
+                />
+              {/* </div> */}
+
               <h3 className="font-display text-2xl font-bold text-foreground">
                 VR Experiences for Events & Exhibitions
               </h3>
@@ -80,9 +89,12 @@ export function ServicesSection() {
           {/* Architectural Visualization */}
           <AnimateIn delay={0.2}>
             <div className="glass glass-hover group flex h-full flex-col rounded-2xl p-8 glow-sm">
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-                <Building2Icon />
-              </div>
+              <Image
+                src="/images/arch1-svg.png"
+                alt="Logo"
+                width={90}
+                height={90}
+              />
               <h3 className="font-display text-2xl font-bold text-foreground">
                 Architectural 3D Rendering & VR Walkthrough Services in Kerala
               </h3>
